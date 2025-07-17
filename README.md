@@ -52,6 +52,7 @@ matplotlib
 seaborn
 scikit-learn
 imbalanced-learn
+```
 
 Install missing libraries in Colab using:
 
