@@ -54,7 +54,7 @@ scikit-learn
 imbalanced-learn
 ```
 
-Install missing libraries in Colab using:
+## Install missing libraries in Colab using:
 
 python
 Copy
@@ -64,27 +64,27 @@ Edit
 On Google Colab
 Open the Jupyter Notebook in Google Colab
 
-Upload the dataset (creditcard.csv or zipped version)
+## Upload the dataset (creditcard.csv or zipped version)
 
-Run each cell in order to preprocess data, train models, and evaluate results
+## Run each cell in order to preprocess data, train models, and evaluate results
 
-📈 Outputs
-Classification reports for each model
+## 📈 Outputs
+- Classification reports for each model
 
-Confusion matrices
+- Confusion matrices
 
-ROC-AUC scores and ROC curve plots
+- ROC-AUC scores and ROC curve plots
 
-Performance comparison of Logistic Regression, Random Forest, and SVM classifiers
+## Performance comparison of Logistic Regression, Random Forest, and SVM classifiers
 
-📁 File Structure
-python
-Copy
-Edit
+- 📁 File Structure
+- python
+- Copy
+- Edit
 .
-├── creditcard.csv (or creditcardfraud.zip)
-├── credit_card_fraud_detection.ipynb
-└── README.md
-✍️ Author
-Anshumaan Singh
-anshuls2105@gmail.com
+- ├── creditcard.csv (or creditcardfraud.zip)
+- ├── credit_card_fraud_detection.ipynb
+- └── README.md
+## ✍️ Author
+- Anshumaan Singh
+- anshuls2105@gmail.com
