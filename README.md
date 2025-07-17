@@ -1,88 +1,89 @@
-🕵️‍♂️ Credit Card Fraud Detection
-Detect fraudulent credit card transactions using machine learning models on a real-world dataset. The pipeline includes data preprocessing, handling class imbalance, training classification models, and evaluating model performance using standard metrics.
+# 🕵️‍♂️ Credit Card Fraud Detection
 
-📂 Dataset
-Source: Kaggle - Credit Card Fraud Detection Dataset
+Detect fraudulent credit card transactions using machine learning models on a real-world dataset. This project implements a complete ML pipeline, including data preprocessing, handling class imbalance, model training, and evaluation using standard metrics.
 
-Description: Contains transactions made by European cardholders in September 2013.
+---
 
-Total Records: 284,807
+## 📂 Dataset
 
-Fraudulent Transactions: 492 (highly imbalanced)
+- **Source:** [Kaggle - Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- **Description:** Contains transactions made by European cardholders in September 2013. Features are PCA-transformed (V1 to V28) for privacy.
+- **Total Records:** 284,807  
+- **Fraudulent Transactions:** 492 (highly imbalanced dataset)
 
-📊 Features
-Time, Amount: Raw features
+---
 
-V1 to V28: Principal components obtained with PCA
+## 📊 Features
 
-Class: Target variable (0 for legit, 1 for fraud)
+- `Time`, `Amount`: Original features (scaled)
+- `V1` to `V28`: Principal components
+- `Class`: Target variable (0 = Legit, 1 = Fraud)
 
-⚙️ Project Workflow
-Data Loading
+---
 
-Upload and unzip dataset if needed.
+## ⚙️ Project Workflow
 
-Exploratory Data Analysis
+1. **Data Loading**
+   - Upload the dataset manually or from a zip file
+2. **Exploratory Data Analysis**
+   - Class distribution visualization
+3. **Preprocessing**
+   - Scaling `Amount` and `Time` features
+4. **Imbalance Handling**
+   - Using `RandomUnderSampler` to balance classes
+5. **Model Training**
+   - Logistic Regression
+   - Random Forest
+   - Support Vector Machine (SVM)
+6. **Evaluation**
+   - Classification Report (Precision, Recall, F1-score)
+   - Confusion Matrix
+   - ROC-AUC Score
+   - ROC Curve Visualization
 
-Class imbalance visualization.
+---
 
-Preprocessing
+## 🧪 Libraries Used
 
-Feature scaling on Time and Amount.
-
-Imbalance Handling
-
-Under-sampling using RandomUnderSampler.
-
-Model Training
-
-Logistic Regression
-
-Random Forest
-
-Support Vector Machine (SVM)
-
-Evaluation
-
-Classification Report (Precision, Recall, F1-score)
-
-Confusion Matrix
-
-ROC-AUC Score & ROC Curve plot
-
-🧪 Libraries Used
-text
-Copy
-Edit
+```bash
 numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
 imbalanced-learn
-🚀 How to Run (on Google Colab)
-Open the notebook in Google Colab
 
-Upload creditcard.csv or creditcardfraud.zip
+Install missing libraries in Colab using:
 
-Run all cells sequentially
+python
+Copy
+Edit
+!pip install imbalanced-learn
+🚀 How to Run
+On Google Colab
+Open the Jupyter Notebook in Google Colab
 
-📈 Output Example
-Model performance metrics
+Upload the dataset (creditcard.csv or zipped version)
 
-ROC-AUC comparison between classifiers
+Run each cell in order to preprocess data, train models, and evaluate results
 
-Visual plots of ROC curves and confusion matrices
+📈 Outputs
+Classification reports for each model
+
+Confusion matrices
+
+ROC-AUC scores and ROC curve plots
+
+Performance comparison of Logistic Regression, Random Forest, and SVM classifiers
 
 📁 File Structure
-scss
+python
 Copy
 Edit
 .
-├── creditcard.csv (or ZIP)
+├── creditcard.csv (or creditcardfraud.zip)
 ├── credit_card_fraud_detection.ipynb
 └── README.md
-
-🧑‍💻 Author
+✍️ Author
 Anshumaan Singh
 anshuls2105@gmail.com
