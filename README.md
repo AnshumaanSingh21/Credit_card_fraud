@@ -94,7 +94,7 @@ Open the Jupyter Notebook in Google Colab
    _Recommendation: Use Logistic Regression for initial deployment, but monitor Random Forest performance as well._
 
 2. **Threshold Selection:** By adjusting the decision threshold (see Precision-Recall plot above), recall can be increased to over 95% at the cost of some precision.  
-   _Recommendation: Set threshold to X (as found above) to maximize fraud detection, and periodically review based on business impact._
+   _Recommendation: Set threshold to 0.55 to maximize fraud detection, and periodically review based on business impact._
 
 3. **Class Imbalance Handling:** Undersampling was used for balance; for larger datasets or in production, consider advanced techniques such as SMOTE or ensemble methods for further improvement.
 
